@@ -1,0 +1,1 @@
+Rscript Code.R $1 
