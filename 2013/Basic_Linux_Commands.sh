@@ -60,14 +60,14 @@ expr 99 + 10
 
 solution=$(expr 99 + 10)
 
-echo $soltion
+echo $solution
 
 
 ############################################################################
 ## Move to Working Directory For Demo 
 ############################################################################
 
-cd ~/Linux_Tutorial/Year_2013
+cd ~/Linux_Tutorial/2013
 
 
 ############################################################################
@@ -113,6 +113,9 @@ cd
 ## Make a new file using vi Editor
 ############################################################################
 
+
+cd ~/Linux_Tutorial/2013/Sample_Files
+
 ##make a new file using vi editor
 vi file6.txt
 
@@ -136,12 +139,20 @@ cd More_Files/File_1/
 
 mv new_name_file.txt  ../../file1.txt
 
+cd ..
+
 ##move a directory
 mv File_1 File_2/File_1
+
+mv File_2/File_1 File_1
+
+cd ..
 
 ##use the * command
 
 mv file* More_Files
+
+cd More_Files
 
 indices=$(seq 5)
 
